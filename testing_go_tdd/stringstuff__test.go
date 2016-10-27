@@ -29,3 +29,19 @@ func TestJoinpath(t *testing.T) {
         t.Log("Successfully tested")
     }
 }
+
+func TestCapitalize(t *testing.T) {
+    if actual, expected := CapitalizeString("lowks"), "LOWKS"; actual != expected {
+        t.Errorf("Expected %s to Equal %s", actual, expected)
+    } else {
+        t.Log("Successfully tested")
+    }
+}
+
+func TestCapitalizeFirstCharacter(t *testing.T) {
+    if actual, expected := CapitalizeFirstCharacter("lowks"), "Lowks"; actual != expected {
+        t.Errorf("Expected %s to Equal %s", actual, expected)
+    } else {
+        t.Log("Successfully tested")
+    }
+}
