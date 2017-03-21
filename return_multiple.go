@@ -2,8 +2,10 @@ package main
 
 import "fmt"
 
-func return_multiple(input int, a_string string) (int, string) {
-	return input, a_string
+func return_multiple(input int, a_string string) (input_int int, b_string string) {
+	input_int = input
+	b_string = a_string
+	return
 }
 
 func main() {
