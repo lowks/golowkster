@@ -24,4 +24,5 @@ very very long string`
 	string_with_prefix := "prefixstring.tar"
 	p("String with prefix", strings.HasPrefix(string_with_prefix, "prefixstring"))
 	p("String with suffix", strings.HasSuffix(string_with_prefix, "tar"))
+	p("Strings after split", strings.SplitAfter("abc,d,ef","abc"))
 }
