@@ -25,4 +25,7 @@ very very long string`
 	p("String with prefix", strings.HasPrefix(string_with_prefix, "prefixstring"))
 	p("String with suffix", strings.HasSuffix(string_with_prefix, "tar"))
 	p("Strings after split", strings.SplitAfter("abc,d,ef","abc"))
+	p("Strings repeating", strings.Repeat("hoho",5))
+	replacer := strings.NewReplacer("aaa","bbb")
+	p("String replaced", replacer.Replace("aaa"))
 }
